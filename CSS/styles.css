@@ -1,0 +1,139 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    background-color: hsl(30, 38%, 92%);
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    justify-content: center; 
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+.image {
+    background-image: url(../images/image-product-desktop.jpg);
+    background-size: cover;
+    width: 350px;
+    height: 500px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    height: 500px;   
+}
+
+.content header {
+    font-family: Montserrat;
+    font-weight: 500;
+    font-size: 14px;
+    padding: 35px 0 20px 30px;
+    letter-spacing: 0.4rem;
+    font-size: 0.9rem;   
+}
+
+.content h2 {
+    margin: 0;
+    padding: 0 100px 20px 30px ;
+    font-family: Fraunces;
+    font-weight: 700;
+    font-size: 2.2rem;
+}
+
+.content p {
+    margin: 0;
+    padding: 0 90px 20px 30px;
+    font-family: Montserrat;
+    font-weight: 500;
+    line-height: 1.7rem;
+    font-size: 14px;
+}
+
+.price {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 0 30px 20px 30px;
+    font-family: Fraunces;
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.price1 {
+    color: hsl(158, 36%, 37%);
+}
+.price2 {
+    font-size: 14px;
+    font-family: Montserrat;
+    font-weight: 500;
+    text-decoration: line-through;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 289px;
+    align-self: center;
+    padding: 15px;
+    border-radius: 10px;
+    border: none;
+    background-color: hsl(158, 36%, 37%);
+    font-family: Montserrat;
+    font-weight: 700;
+    color: #fff;
+}
+
+.btn:hover {
+    background-color: hsl(212, 21%, 14%);
+    cursor: pointer;
+}
+
+@media (max-width: 650px)
+    {
+        .container {
+           flex-direction: column; 
+           padding: 15px;
+           width: 400px;
+           height: 90%;                      
+        }
+
+        .image {
+            background-image: url(../images/image-product-mobile.jpg);
+            border-bottom-left-radius: 0;
+            border-top-right-radius: 10px;
+            width: 400px;
+            height: 250px;
+            margin-top: 70px;
+            padding-bottom: 10px;
+        }
+
+        .content header {
+            padding: 30px 0 10px 30px; 
+        }
+
+        .content h2 {
+            padding: 0 10px 10px 30px ;
+        }
+
+        .content p {
+            padding: 0 25px 20px 30px;
+            line-height: 1.5rem;
+        }
+
+        .content {
+            width: 90%;
+            height: 400px;   
+        }
+    
+}
